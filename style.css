@@ -186,7 +186,9 @@ h2 {
     text-align: center;
     font-size: 2.5rem;
     color: var(--text-dark);
-    margin-bottom: 3rem;
+    margin-top: -1.5rem; /* Move the heading upwards */
+    margin-bottom: 1rem; /* Reduce bottom margin */
+
 }
 
 /* Horizontal Scrolling Container */
