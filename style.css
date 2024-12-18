@@ -141,29 +141,35 @@ h2 {
 
 
 /* About Section */
+/* About Me Section - Improved Design */
 .about {
-    background-color: #2e2e2e; /* Dark grey background */
-    color: #ffffff; /* White text color */
-    text-align: center; /* Center align all content */
-    padding: 3rem 2rem; /* Padding for top/bottom and sides */
+    background-color: #e0e0e0; /* Lighter grey */
+    color: #333333; /* Darker text for contrast */
+    text-align: center;
+    padding: 4rem 2rem; /* Add breathing space */
+    line-height: 1.8; /* Elegant line spacing */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean font style */
 }
 
 .about h2 {
-    font-size: 2.5rem; /* Heading size */
-    margin-bottom: 1rem; /* Space between heading and paragraph */
-    font-weight: bold; /* Bold heading */
+    font-size: 2.5rem; /* Larger heading */
+    color: #20203c; /* Subtle dark navy for heading */
+    margin-bottom: 1.5rem; /* Spacing below heading */
+    font-weight: bold;
 }
 
 .about p {
-    font-size: 1.2rem; /* Slightly larger font for paragraph */
-    line-height: 1.6; /* Improved readability */
-    max-width: 800px; /* Restrict text width for better layout */
-    margin: 0 auto; /* Center paragraph block */
+    font-size: 1.1rem;
+    max-width: 700px; /* Restrict width for readability */
+    margin: 0 auto; /* Center text block */
+    color: #555555; /* Softer text color */
 }
 
 .about strong {
-    font-weight: bold; /* Bold for emphasized text */
+    font-weight: 600; /* Semi-bold */
+    color: #333333; /* Slightly darker emphasis */
 }
+
 
 
 /* Icons Side Bar */
