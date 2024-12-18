@@ -143,31 +143,26 @@ h2 {
 /* About Section */
 /* About Me Section - Improved Design */
 .about {
-    background-color: var(--color-grey); /* Lighter grey */
-    color: #0000; /* Darker text for contrast */
-    text-align: center;
-    padding: 4rem 2rem; /* Add breathing space */
-    line-height: 1.8; /* Elegant line spacing */
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean font style */
+    background-color: #c4c4c4; /* Light grey background */
+    color: #20203c; /* Dark text color */
+    text-align: center; /* Centers the text horizontally */
+    padding: 3rem 2rem; /* Add vertical padding and reduce side padding */
+    margin: 0 auto; /* Center the section */
+    max-width: 1000px; /* Constrain the width to avoid excess spacing */
 }
 
 .about h2 {
-    font-size: 2.5rem; /* Larger heading */
-    color: #20203c; /* Subtle dark navy for heading */
-    margin-bottom: 1.5rem; /* Spacing below heading */
-    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .about p {
     font-size: 1.1rem;
-    max-width: 2700px; /* Restrict width for readability */
-    color: #555555; /* Softer text color */
+    line-height: 1.8; /* Improve line spacing for readability */
+    margin: 0 auto;
+    max-width: 900px; /* Limits the text width for better reading */
 }
 
-.about strong {
-    font-weight: 600; /* Semi-bold */
-    color: #333333; /* Slightly darker emphasis */
-}
 
   /* Skill scroll bar */
 	  
