@@ -271,33 +271,53 @@ h2 {
 }
 
 * Footer */
+/* Footer Section */
+#footer {
+    background-color: #c4c4c4; /* Grey background */
+    text-align: center; /* Center-align all content */
+    padding: 2rem 0; /* Top and bottom padding */
+    width: 100%;
+    margin: 0; /* Remove default margins */
+    box-sizing: border-box; /* Include padding in total width */
+}
 
-	#footer {
-		background: #ffffff;/*#E8EEF4;*/
-		color: #7c8081;
-		padding: 3.5em 5em 3.5em 5em;
-		text-align: center;
-	}
+/* Social Icons */
+#footer .icons {
+    display: flex; /* Horizontal alignment */
+    justify-content: center; /* Center-align horizontally */
+    align-items: center; /* Center-align vertically */
+    gap: 2rem; /* Space between icons */
+    list-style: none; /* Remove default bullets */
+    margin: 0;
+    padding: 0;
+}
 
-		#footer .copyright {
-			font-size: 0.8em;
-			line-height: 1em;
-		}
+#footer .icons li {
+    display: inline-block;
+}
 
-			#footer .copyright a {
-				color: inherit;
-			}
+#footer .icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s ease; /* Add smooth hover effect */
+}
 
-			#footer .copyright li {
-				display: inline-block;
-				margin-left: 1em;
-				padding-left: 1em;
-				border-left: dotted 1px;
-			}
+#footer .icons a:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
 
-				#footer .copyright li:first-child {
-					margin: 0;
-					padding: 0;
-					border: 0;
-				}
+#footer .icons img {
+    width: 50px; /* Set icon size */
+    height: 50px;
+}
 
+/* Copyright Styling */
+#footer .copyright {
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+    color: #333; /* Dark grey text */
+    list-style: none;
+    padding: 0;
+}
