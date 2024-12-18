@@ -2,6 +2,7 @@
 :root {
     --color-green: rgb(153, 156, 104); /* From --color_42 */
     --color-beige: rgb(248, 246, 243); /* From --color_11 */
+    --color-grey: rgb(186, 185, 182); /* From --color_11 */
     --text-dark: #20203c;
     --white: #ffffff;
 }
@@ -137,13 +138,13 @@ h2 {
 .contact {
     text-align: center;
     padding: 2rem;
-    background: var(--color-green);
-    color: var(--white);
+    background: var(--color-grey);
+    color: var(--black);
 }
 
 .footer {
     text-align: center;
     padding: 1rem;
-    background-color: var(--color-green);
-    color: var(--white);
+    background-color: var(--color-grey);
+    color: var(--black);
 }
