@@ -36,7 +36,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-green);
-    padding: 2rem 0; /* Vertical padding only */
+    padding: 1.4rem 0; /* Vertical padding only */
     width: 100%; /* Full width for the green background */
 }
 
@@ -110,7 +110,7 @@ h2 {
 
 /* About Section */
 .about {
-    padding: 3rem 2rem;
+    padding: 3.3rem 2rem;
     background-color: var(--white);
     text-align: center;
 }
