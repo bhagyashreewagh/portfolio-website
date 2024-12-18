@@ -174,7 +174,7 @@ h2 {
 /* Skills Section - Tube with Scrolling Icons */
 #skills_section {
     background-color: var(--white); /* White tube color */
-    padding: 2rem 0; /* Vertical padding */
+    padding: 3rem 0; /* Vertical padding */
     border-radius: 50px; /* Tube effect with rounded edges */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
     width: 80%; /* Restrict width to center */
@@ -193,14 +193,14 @@ h2 {
 .slide-track {
     display: flex;
     animation: scroll 10s linear infinite; /* Smooth horizontal scroll */
-    width: calc(250px * 12); /* Adjust for the total number of images */
+    width: calc(350px * 12); /* Adjust for the total number of images */
     gap: 3rem; /* Space between images */
 }
 
 /* Individual Slides */
 .slide {
     flex: 0 0 auto; /* Prevent shrinking */
-    width: 250px; /* Larger image containers */
+    width: 350px; /* Larger image containers */
 }
 
 .slide img {
@@ -335,5 +335,7 @@ h2 {
     list-style: none;
     justify-content: center;
     align-items: center;
+    text-align: center; /* Center align the text */
+
 
 }
