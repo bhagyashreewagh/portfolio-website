@@ -13,10 +13,12 @@
         <div class="logo">My Portfolio</div>
         <nav>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="submenu"><a href="#aboutme_section">About</a></li>
+					<li class="submenu"><a href="#skills_section">Skills</a></li>
+					<li class="submenu"><a href="#portfolio_section">Portfolio</a></li>
+					<li class="submenu"><a href="#experience_section">Experience</a></li>
+					<li class="submenu"><a href="#resume_section">Resume</a></li>
+					<li class="submenu"><a href="#footer">Contact Me</a></li>
             </ul>
         </nav>
     </div>
@@ -41,23 +43,78 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h3>Programming</h3>
-                <p>Python, SQL, R, HTML/CSS, JavaScript</p>
-            </div>
-            <div class="skill-card">
-                <h3>AI & ML</h3>
-                <p>Regression, Classification, NLP, Deep Learning</p>
-            </div>
-            <div class="skill-card">
-                <h3>Tools</h3>
-                <p>Tableau, Power BI, TensorFlow, Scikit-learn</p>
-            </div>
-        </div>
-    </section>
+			<section class="wrapper style1 container special" id="skills_section">
+				<h2>Skills & Tools</h2>
+				<div class="slider">
+					<div class="slide-track">
+						<div class="slide">
+							<img src="images/skills/python.png" height="150" alt="" />
+						</div>
+						<div class="slide">
+							<img src="images/skills/postgresql.png" height="150" alt="" />
+						</div>
+
+						<div class="slide">
+							<img src="images/skills/hadoop.png" height="120" alt="" />
+						</div>
+
+						<div class="slide">
+							<img src="images/skills/teradata.png" height="120" alt="" />
+						</div>
+						<!-- <div class="slide">
+									<img src="images/skills/greenplum.png" height="120" alt="" />
+								</div> -->
+
+						<div class="slide">
+							<img src="images/skills/tableau.png" height="150" alt="" />
+						</div>
+						<!-- <div class="slide">
+									<img src="images/skills/powerbi.png" height="150" alt="" />
+								</div> -->
+
+						<div class="slide">
+							<img src="images/skills/tensorflow.png" height="120" alt="" />
+						</div>
+						<!-- <div class="slide">
+									<img src="images/skills/keras.png" height="100"  alt="" />
+								</div> -->
+						<!-- <div class="slide">
+									<img src="images/skills/idq.png" height="150" alt="" />
+								</div> -->
+
+						<div class="slide">
+							<img src="images/skills/docker.png" height="150" alt="" />
+						</div>
+						<!-- <div class="slide">
+									<img src="images/skills/git.png" height="120" alt="" />
+								</div> -->
+						<!-- <div class="slide">
+									<img src="images/skills/office.png" height="150"  alt="" />
+								</div> -->
+
+						<div class="slide">
+							<img src="images/skills/html.png" height="150" alt="" />
+						</div>
+						<div class="slide">
+							<img src="images/skills/css.png" height="150" alt="" />
+						</div>
+						<!-- <div class="slide">
+									<img src="images/skills/rasa.png" height="150"  alt="" />
+								</div> -->
+						<div class="slide">
+							<img src="images/skills/python.png" height="150" alt="" />
+						</div>
+						<div class="slide">
+							<img src="images/skills/postgresql.png" height="150" alt="" />
+						</div>
+						<div class="slide">
+							<img src="images/skills/hadoop.png" height="120" alt="" />
+						</div>
+
+					</div>
+				</div>
+			</section>
+
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
@@ -83,8 +140,25 @@
         <a href="mailto:youremail@example.com" class="btn">Email Me</a>
     </section>
 
-    <footer class="footer">
-        <p>&copy; 2024 Bhagyashree Wagh. All Rights Reserved.</p>
-    </footer>
+<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a target="_blank" href="bwagh@uw.edu.com" class="icon brands circle fa-email tooltip"><img
+							class="black-icon-overlay" href=""
+							src="https://img.icons8.com/ios-glyphs/60/000000/email.png" /></a></li>
+				<li><a target="_blank" href="https://www.linkedin.com/in/bwaghuw/"
+						class="icon brands circle fa-linkedin-f"><img class="black-icon-overlay" href=""
+							src="https://img.icons8.com/ios-glyphs/60/000000/linkedin.png" /></a></li>
+				<li><a target="_blank" href="https://github.com/bhagyashreewagh" class="icon brands circle fa-github-g"><img
+							class="black-icon-overlay" href=""
+							src="https://img.icons8.com/ios-glyphs/60/000000/github.png" /></a></li>
+				
+			</ul>
+
+			<ul class="copyright">
+				<li>&copy; 2024 Bhagyashree Wagh All Rights Reserved.</li>
+			</ul>
+
+		</footer>
 </body>
 </html>
