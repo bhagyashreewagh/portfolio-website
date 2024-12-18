@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Library for animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -26,50 +28,59 @@
 
     <!-- Hero Section -->
     <header class="hero">
-        <div class="container">
-            <h1>Hi, I'm <span>Bhagyashree Wagh</span></h1>
-            <p>AI Enthusiast | Data Scientist | Master of Information Management</p>
-            <p class="tagline">"Turning data into decisions, and decisions into action."</p>
+        <div class="container hero-content">
+            <div class="hero-text" data-aos="fade-up">
+                <h1>Hi, I'm <span>Bhagyashree Wagh</span></h1>
+                <p>AI Enthusiast | Data Scientist | Master of Information Management</p>
+                <p class="tagline">"Turning data into decisions, and decisions into action."</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+            <div class="hero-photo" data-aos="fade-left">
+                <img src="images/profile.jpg" alt="Bhagyashree Wagh" class="profile-img">
+            </div>
         </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
+    <section id="about" class="section">
+        <div class="container" data-aos="fade-right">
             <h2>About Me</h2>
             <p>
-                I'm Bhagyashree Wagh, a Master's student specializing in **Information Management** with a focus on **Artificial Intelligence**.  
-                I bring a strong foundation in **Business Intelligence** and **data analytics**, combined with a passion for transitioning into the AI space.  
-                My interests lie in leveraging **AI solutions** to solve complex challenges in industries like **construction** and **environmental management**.
+                I’m Bhagyashree Wagh, a Master's student specializing in **Artificial Intelligence**. My background in **Business Intelligence** and passion for **solving real-world problems** drive my interest in building innovative AI solutions.
+                I thrive at the intersection of **strategy and execution**, particularly in industries like **construction** and **environmental management**.
             </p>
-            <p class="fun-fact">⚡ Did you know? I once developed a chatbot capable of predicting customer queries with 90% accuracy!</p>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="section projects">
         <div class="container">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <h3>Predictive AI Model for Construction</h3>
-                <p>Developed a machine learning model that predicts delays in construction projects using historical data.</p>
-            </div>
-            <div class="project-card">
-                <h3>AI-Driven Environmental Insights</h3>
-                <p>Built a Python tool to analyze environmental data and provide actionable insights for sustainability efforts.</p>
-            </div>
-            <div class="project-card">
-                <h3>Large Language Model for Chat Automation</h3>
-                <p>Implemented an NLP-based chatbot using GPT-like models to streamline customer support operations.</p>
+            <h2 data-aos="fade-up">Projects</h2>
+            <div class="project-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/project1.jpg" alt="Project 1">
+                    <h3>Construction AI Insights</h3>
+                    <p>Developed a machine learning model to predict delays in construction projects.</p>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/project2.jpg" alt="Project 2">
+                    <h3>Environmental Data Analysis</h3>
+                    <p>AI-driven tools to provide actionable insights for sustainability efforts.</p>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="images/project3.jpg" alt="Project 3">
+                    <h3>Large Language Model Chatbot</h3>
+                    <p>Built a chatbot using GPT-like models to automate customer inquiries.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
+    <section id="contact" class="section contact">
+        <div class="container" data-aos="fade-up">
             <h2>Contact Me</h2>
-            <p>If you'd like to connect or collaborate, feel free to reach out!</p>
+            <p>Let's connect! Feel free to reach out:</p>
             <p>Email: <a href="mailto:bhagyashreewagh@example.com">bhagyashreewagh@example.com</a></p>
             <p>GitHub: <a href="https://github.com/bhagyashreewagh" target="_blank">github.com/bhagyashreewagh</a></p>
         </div>
@@ -81,5 +92,11 @@
             <p>&copy; 2024 Bhagyashree Wagh | All Rights Reserved</p>
         </div>
     </footer>
+
+    <!-- AOS Library for Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
