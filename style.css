@@ -1,147 +1,151 @@
-/* General Reset 1*/
+/* Reset and base styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #fdf8f4; /* Light beige */
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #F5F3EF;
+    color: #333;
 }
 
-/* Navigation Bar */
-header {
-  background-color: #ffedd5; /* Light orange tint */
-  padding: 1rem 2rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 10;
-}
-
+/* Navigation */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #EFEDE9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-.logo {
-  font-weight: 600;
-  font-size: 1.8rem;
-  color: #333;
+.navbar .brand-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: #333;
-  font-size: 1.2rem;
-  transition: color 0.3s;
+.navbar .nav-links li {
+    margin: 0 1rem;
 }
 
-.nav-links a:hover {
-  color: #d97706; /* Highlight on hover */
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #B8723B;
 }
 
 /* Hero Section */
 .hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5rem 10%;
-  background-color: #ffedd5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4rem 2rem;
+    background-color: #EFEDE9;
 }
 
 .hero-content {
-  display: flex;
-  gap: 2rem;
+    max-width: 600px;
 }
 
-.hero-text {
-  max-width: 50%;
+.hero-content h1 {
+    font-size: 4rem;
+    color: #333;
 }
 
-.hero-text h1 {
-  font-size: 3.5rem;
-  color: #333;
+.hero-content h1 span {
+    color: #B8723B;
 }
 
-.highlight {
-  color: #d97706;
-}
-
-.hero-text p {
-  font-size: 1.2rem;
-  margin: 1rem 0;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  background-color: #d97706;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 1rem;
+.hero-content p {
+    font-size: 1.2rem;
+    color: #555;
 }
 
 .hero-image img {
-  width: 300px;
-  border-radius: 50%;
-  border: 4px solid #d97706;
+    max-width: 300px;
+    border-radius: 50%;
+    border: 5px solid #B8723B;
 }
 
-/* Section Layout */
-.section {
-  padding: 4rem 10%;
-  text-align: center;
+/* About Section */
+.about {
+    padding: 4rem 2rem;
+    background-color: #A3A68B;
+    color: #F5F3EF;
+    text-align: center;
 }
 
-.section h2 {
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
-  color: #333;
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.2rem;
 }
 
 /* Skills Section */
-.skills-grid {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
+.skills {
+    background-color: #EFEDE9;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .skill-box {
-  padding: 2rem;
-  background-color: #fff7ed;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: #FDFBF8;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
 }
 
-.skill-box i {
-  font-size: 2rem;
-  color: #d97706;
-  margin-bottom: 1rem;
+.skill-box h3 {
+    margin-bottom: 1rem;
+    color: #333;
 }
 
 /* Contact Section */
-.contact-links a {
-  color: #d97706;
-  font-size: 2rem;
-  margin: 0 1rem;
+.contact {
+    padding: 4rem 2rem;
+    background-color: #9A9C92;
+    text-align: center;
+    color: #F5F3EF;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
 }
 
 footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #ffedd5;
-  color: #333;
+    margin-top: 2rem;
+    font-size: 0.9rem;
 }
