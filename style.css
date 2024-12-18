@@ -178,7 +178,7 @@ h2 {
     border-radius: 50px; /* Tube effect with rounded edges */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
     width: 80%; /* Restrict width to center */
-    margin: 0 auto; /* Center horizontally */
+    margin: 5rem auto; /* Center horizontally */
     overflow: hidden; /* Hide overflow for smooth sliding */
 }
 
@@ -304,6 +304,8 @@ h2 {
     list-style: none; /* Remove default bullets */
     margin: 0;
     padding: 0;
+    background-color: var(--color-grey); /* Grey background */
+
 }
 
 #footer .icons li {
@@ -325,6 +327,7 @@ h2 {
 #footer .icons img {
     width: 50px; /* Set icon size */
     height: 50px;
+
 }
 
 /* Copyright Styling */
@@ -336,6 +339,8 @@ h2 {
     justify-content: center;
     align-items: center;
     text-align: center; /* Center align the text */
+    background-color: var(--color-grey); /* Grey background */
+
 
 
 }
