@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhagyashree Wagh</title>
+    <title>Bhagyashree Wagh Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation Bar -->
-    <header>
+    <header class="header">
+        <div class="logo">Bhagya Wagh</div>
         <nav>
-            <div class="logo">Bhagya Wagh</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -23,30 +21,67 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
+    <section class="hero">
         <div class="hero-content">
             <h1>Hi, I'm <span>Bhagyashree Wagh</span></h1>
             <p>AI Enthusiast | Data Scientist | Master of Science in Information Management</p>
-            <button class="learn-more">Learn More</button>
+            <a href="#about" class="btn">Learn More</a>
         </div>
         <div class="hero-image">
             <img src="images/2424847.jpg" alt="Bhagyashree Wagh">
         </div>
     </section>
 
-    <!-- About Me -->
+    <!-- About Section -->
     <section id="about" class="about">
         <h2>About Me</h2>
-        <p>
-            I’m passionate about building <strong>AI-driven solutions</strong> to solve real-world problems.
-            With a Master’s degree in <strong>Information Management</strong> and a focus on AI, 
-            I specialize in <strong>data analysis</strong>, <strong>machine learning</strong>, 
-            and <strong>project optimization</strong>.
-        </p>
+        <p>I'm passionate about building <strong>AI-driven solutions</strong> to solve real-world problems. With a Master's degree in <strong>Information Management</strong> and a focus on AI, I specialize in <strong>data analysis, machine learning</strong>, and <strong>project optimization</strong>.</p>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Programming</h3>
+                <p>Python, SQL, R, HTML/CSS, JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <h3>AI & ML</h3>
+                <p>Regression, Classification, NLP, Deep Learning</p>
+            </div>
+            <div class="skill-card">
+                <h3>Tools</h3>
+                <p>Tableau, Power BI, TensorFlow, Scikit-learn</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Construction AI Insights</h3>
+            <p>Predict delays using machine learning models.</p>
+        </div>
+        <div class="project-card">
+            <h3>Environmental Data Analysis</h3>
+            <p>AI tools for actionable sustainability insights.</p>
+        </div>
+        <div class="project-card">
+            <h3>Chatbot Development</h3>
+            <p>Automated GPT-like chatbot solutions.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Feel free to connect with me:</p>
+        <a href="mailto:youremail@example.com" class="btn">Email Me</a>
+    </section>
+
+    <footer class="footer">
         <p>&copy; 2024 Bhagyashree Wagh. All Rights Reserved.</p>
     </footer>
 </body>
