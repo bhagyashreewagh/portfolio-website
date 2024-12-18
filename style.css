@@ -171,43 +171,57 @@ h2 {
 
   /* Skill scroll bar */
 	  
+/* Skills Section - Tube with Scrolling Icons */
 #skills_section {
-    background-color: var(--color-beige);
-    padding: 2.5rem 0;
+    background-color: var(--white); /* White tube color */
+    padding: 2rem 0; /* Vertical padding */
+    border-radius: 50px; /* Tube effect with rounded edges */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 80%; /* Restrict width to center */
+    margin: 0 auto; /* Center horizontally */
     overflow: hidden; /* Hide overflow for smooth sliding */
 }
 
 #skills_section h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: var(--text-dark);
     margin-bottom: 2rem;
 }
 
+/* Horizontal Scrolling Container */
 .slide-track {
-    display: flex; /* Make the images align horizontally */
-    width: calc(200px * 12); /* Adjust width based on total images */
-    animation: scroll 15s linear infinite; /* Horizontal scrolling animation */
+    display: flex;
+    animation: scroll 10s linear infinite; /* Smooth horizontal scroll */
+    width: calc(250px * 12); /* Adjust for the total number of images */
+    gap: 3rem; /* Space between images */
 }
 
+/* Individual Slides */
 .slide {
-    flex: 0 0 auto; /* Prevents shrinking */
-    width: 200px; /* Width of each image container */
-    margin-right: 2rem;
+    flex: 0 0 auto; /* Prevent shrinking */
+    width: 250px; /* Larger image containers */
 }
 
 .slide img {
-    width: 100%; /* Scale image to fit container */
-    height: auto; /* Keep proportions */
-    object-fit: contain; /* Fit image without stretching */
+    width: 100%; /* Fill container */
+    height: 100px; /* Fixed height for consistency */
+    object-fit: contain; /* Ensure images retain proportions */
+    transition: transform 0.3s ease; /* Smooth hover effect */
 }
 
-/* Keyframes for horizontal scrolling */
+/* Hover Effect to Enlarge Images */
+.slide img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Keyframes for Smooth Scrolling */
 @keyframes scroll {
     0% {
         transform: translateX(0); /* Start at the left */
     }
     100% {
-        transform: translateX(-50%); /* Move left by half the container */
+        transform: translateX(-50%); /* Move left by half the width */
     }
 }
 
