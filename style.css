@@ -33,14 +33,21 @@ h2 {
 /* Navigation Bar */
 .header {
     display: flex;
-    justify-content: space-between; /* Keeps logo and links aligned */
+    justify-content: space-between;
     align-items: center;
     background-color: var(--color-green);
-    padding: 1rem 5%; /* Add padding on both sides */
-    color: var(--white);
-    max-width: 1200px; /* Center-align with max-width */
-    margin: 0 auto; /* Center the header container */
+    padding: 1rem 0; /* Vertical padding only */
+    width: 100%; /* Full width for the green background */
 }
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%; /* Pull text inward with this width */
+    margin: 0 auto; /* Center content */
+}
+
 
 .nav-links {
     display: flex;
