@@ -172,20 +172,20 @@ h2 {
   /* Skill scroll bar */
 	  
 #skills_section {
-    background-color: var(--color-green);
-    padding: 3.5rem 0;
+    background-color: var(--color-beige);
+    padding: 2.5rem 0;
     overflow: hidden; /* Hide overflow for smooth sliding */
 }
 
 #skills_section h2 {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2rem;
 }
 
 .slide-track {
     display: flex; /* Make the images align horizontally */
-    width: calc(200px * 10); /* Adjust width based on total images */
+    width: calc(200px * 12); /* Adjust width based on total images */
     animation: scroll 15s linear infinite; /* Horizontal scrolling animation */
 }
 
