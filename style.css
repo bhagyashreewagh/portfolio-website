@@ -287,7 +287,7 @@ h2 {
 * Footer */
 /* Footer Section */
 #footer {
-    background-color: #c4c4c4; /* Grey background */
+    background-color: var(--color-grey); /* Grey background */
     text-align: center; /* Center-align all content */
     padding: 2rem 0; /* Top and bottom padding */
     width: 100%;
