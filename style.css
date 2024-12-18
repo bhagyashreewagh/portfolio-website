@@ -7,86 +7,113 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f9f9f9;
+    background-color: #fdf8f4; /* Soft beige background */
     color: #333;
     line-height: 1.6;
 }
 
-.section {
-    padding: 60px 20px;
-    text-align: center;
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Navbar */
 .navbar {
     background-color: #333;
     color: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navbar a {
     color: white;
-    text-decoration: none;
-    margin-left: 15px;
+    margin-left: 20px;
+    transition: color 0.3s;
 }
 
 .navbar a:hover {
-    color: #FFD700;
+    color: #d6a467;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to right, #0078FF, #00A8E8);
-    color: white;
-    height: 100vh;
+    background-color: #fdf8f4;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: left;
+    padding: 80px 20px;
+    height: 100vh;
 }
 
 .hero-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 50px;
 }
 
 .hero-text h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 10px;
 }
 
 .hero-text span {
-    color: #FFD700;
+    color: #d6a467;
 }
 
-.hero-text .btn {
-    margin-top: 20px;
-    background-color: #FFD700;
-    color: #333;
+.subtitle {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #d6a467;
+    color: white;
     padding: 10px 20px;
+    margin-top: 20px;
     border-radius: 5px;
-    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
 }
 
-.hero-photo .profile-img {
-    width: 250px;
-    border-radius: 50%;
-    border: 5px solid #FFD700;
+.btn:hover {
+    background-color: #b88c56;
 }
 
 /* Projects Section */
+.projects h2 {
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    color: #444;
+}
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 30px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
 }
 
 .project-card img {
@@ -95,14 +122,21 @@ body {
     margin-bottom: 10px;
 }
 
-.project-card h3 {
-    color: #0078FF;
+/* Contact Section */
+.contact h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #444;
 }
 
-/* Footer */
+.contact a {
+    color: #d6a467;
+    font-weight: 500;
+}
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 15px;
 }
