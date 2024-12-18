@@ -172,7 +172,7 @@ h2 {
   /* Skill scroll bar */
 	  
 #skills_section {
-    background-color: var(--color-beige);
+    background-color: var(--color-green);
     padding: 3.5rem 0;
     overflow: hidden; /* Hide overflow for smooth sliding */
 }
