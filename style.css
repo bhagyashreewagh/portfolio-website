@@ -123,6 +123,22 @@ h2 {
     border-radius: 50% / 55%; /* Subtle oval shape */
     object-fit: cover; /* Keeps proportions intact */
 }
+/* Waving hand animation */
+.wave {
+    display: inline-block;
+    font-size: 2rem; /* Adjust size as needed */
+    animation: wave-animation 1.5s infinite ease-in-out;
+    transform-origin: 70% 70%; /* Pivot point for the waving */
+}
+
+/* Keyframes for waving motion */
+@keyframes wave-animation {
+    0%, 100% { transform: rotate(0deg); }
+    20% { transform: rotate(20deg); }
+    40% { transform: rotate(-10deg); }
+    60% { transform: rotate(10deg); }
+    80% { transform: rotate(-5deg); }
+}
 
 
 /* About Section */
