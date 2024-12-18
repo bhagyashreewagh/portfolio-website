@@ -174,7 +174,7 @@ h2 {
 /* Skills Section - Tube with Scrolling Icons */
 #skills_section {
     background-color: var(--white); /* White tube color */
-    padding: 3rem 0; /* Vertical padding */
+    padding: 5rem 0; /* Vertical padding */
     border-radius: 50px; /* Tube effect with rounded edges */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
     width: 80%; /* Restrict width to center */
@@ -340,7 +340,9 @@ h2 {
     align-items: center;
     text-align: center; /* Center align the text */
     background-color: var(--color-grey); /* Grey background */
-
-
-
 }
+.contact, #footer {
+    background-color: var(--color-grey); /* Uniform grey background */
+}
+
+
