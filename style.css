@@ -36,7 +36,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-green);
-    padding: 1rem 0; /* Vertical padding only */
+    padding: 2rem 0; /* Vertical padding only */
     width: 100%; /* Full width for the green background */
 }
 
@@ -44,7 +44,9 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%; /* Pull text inward with this width */
+    color: var(--white);
+    font-weight: bold;
+    width: 80%; /* Pull text inward with this width */
     margin: 0 auto; /* Center content */
 }
 
