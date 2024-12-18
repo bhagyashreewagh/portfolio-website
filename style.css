@@ -88,7 +88,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 6rem 4rem;
+    padding: 6rem 5rem;
 }
 
 .hero-content {
@@ -142,13 +142,29 @@ h2 {
 
 /* About Section */
 .about {
-    background-color: var(--white);
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 4rem 4rem;
+    background-color: #2e2e2e; /* Dark grey background */
+    color: #ffffff; /* White text color */
+    text-align: center; /* Center align all content */
+    padding: 3rem 2rem; /* Padding for top/bottom and sides */
 }
+
+.about h2 {
+    font-size: 2.5rem; /* Heading size */
+    margin-bottom: 1rem; /* Space between heading and paragraph */
+    font-weight: bold; /* Bold heading */
+}
+
+.about p {
+    font-size: 1.2rem; /* Slightly larger font for paragraph */
+    line-height: 1.6; /* Improved readability */
+    max-width: 800px; /* Restrict text width for better layout */
+    margin: 0 auto; /* Center paragraph block */
+}
+
+.about strong {
+    font-weight: bold; /* Bold for emphasized text */
+}
+
 
 /* Icons Side Bar */
 
