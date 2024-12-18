@@ -5,10 +5,10 @@
     <title>Bhagyashree Wagh | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- AOS Library for animations -->
+    <!-- AOS for Animations -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
@@ -31,7 +31,7 @@
         <div class="container hero-content">
             <div class="hero-text" data-aos="fade-up">
                 <h1>Hi, I'm <span>Bhagyashree Wagh</span></h1>
-                <p>AI Enthusiast | Data Scientist | Master of Information Management</p>
+                <p class="subtitle">AI Enthusiast | Data Scientist | Master of Information Management</p>
                 <p class="tagline">"Turning data into decisions, and decisions into action."</p>
                 <a href="#projects" class="btn">View My Work</a>
             </div>
@@ -42,12 +42,12 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="section about">
         <div class="container" data-aos="fade-right">
             <h2>About Me</h2>
             <p>
-                I’m Bhagyashree Wagh, a Master's student specializing in **Artificial Intelligence**. My background in **Business Intelligence** and passion for **solving real-world problems** drive my interest in building innovative AI solutions.
-                I thrive at the intersection of **strategy and execution**, particularly in industries like **construction** and **environmental management**.
+                I'm Bhagyashree Wagh, a Master's student specializing in **Artificial Intelligence**. My background in **Business Intelligence** and passion for **solving real-world problems** drive my interest in building innovative AI solutions.  
+                I focus on combining **data analytics** and **machine learning** to create impactful solutions, particularly in construction and environmental management industries.
             </p>
         </div>
     </section>
@@ -59,7 +59,7 @@
             <div class="project-grid">
                 <div class="project-card" data-aos="fade-up" data-aos-delay="100">
                     <img src="images/project1.jpg" alt="Project 1">
-                    <h3>Construction AI Insights</h3>
+                    <h3>AI for Construction Insights</h3>
                     <p>Developed a machine learning model to predict delays in construction projects.</p>
                 </div>
                 <div class="project-card" data-aos="fade-up" data-aos-delay="200">
@@ -69,8 +69,8 @@
                 </div>
                 <div class="project-card" data-aos="fade-up" data-aos-delay="300">
                     <img src="images/project3.jpg" alt="Project 3">
-                    <h3>Large Language Model Chatbot</h3>
-                    <p>Built a chatbot using GPT-like models to automate customer inquiries.</p>
+                    <h3>GPT-Like Chatbot</h3>
+                    <p>Built an NLP chatbot using GPT models to automate customer interactions.</p>
                 </div>
             </div>
         </div>
@@ -80,7 +80,6 @@
     <section id="contact" class="section contact">
         <div class="container" data-aos="fade-up">
             <h2>Contact Me</h2>
-            <p>Let's connect! Feel free to reach out:</p>
             <p>Email: <a href="mailto:bhagyashreewagh@example.com">bhagyashreewagh@example.com</a></p>
             <p>GitHub: <a href="https://github.com/bhagyashreewagh" target="_blank">github.com/bhagyashreewagh</a></p>
         </div>
@@ -93,10 +92,12 @@
         </div>
     </footer>
 
-    <!-- AOS Library for Animations -->
+    <!-- AOS Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 1200,
+        });
     </script>
 </body>
 </html>
