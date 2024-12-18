@@ -90,7 +90,7 @@ h2 {
 .hero-image img {
     max-width: 300px;
     border: 5px solid var(--color-green);
-    border-radius: 65%;
+    border-radius: 65% / 80%;
 }
 
 /* About Section */
@@ -137,16 +137,23 @@ h2 {
 }
 
 /* Contact Section */
-.contact {
-    text-align: center;
-    padding: 2rem;
-    background: var(--color-grey);
-    color: var(--black);
+
+.contact-section {
+    background-color: rgb(186, 185, 182); /* Color 38 */
+    color: white;
+    padding: 3rem 1rem;
 }
 
-.footer {
+.contact-section .btn {
+    display: inline-block;
+    background-color: #20303C;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 2rem;
     text-align: center;
-    padding: 1rem;
-    background-color: var(--color-grey);
-    color: var(--black);
+    font-size: 0.9rem;
 }
