@@ -1,3 +1,13 @@
+/* Variables for Colors */
+:root {
+    --color-green: rgb(153, 156, 104); /* From --color_42 */
+    --color-grey: rgb(186, 185, 182); /* From --color_38 */
+    --color-beige: rgb(248, 246, 243); /* From --color_11 */
+    --text-dark: #20203c;
+    --white: #ffffff;
+    --black: #000000;
+}
+
 /* General Reset */
 * {
     margin: 0;
@@ -6,46 +16,51 @@
 }
 
 body {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-size: 16px;
-    color: #20303C; /* Dark Grey */
-    background-color: rgb(248, 246, 243); /* Color 11 */
-    line-height: 1.5;
-    padding: 0 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    background-color: var(--color-beige);
+    color: var(--text-dark);
+    line-height: 1.6;
 }
 
-/* Navbar */
-.navbar {
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+/* Navigation Bar */
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(186, 185, 182); /* Grey Color 38 */
+    background-color: var(--color-green);
     padding: 1rem 2rem;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #fff;
+    color: var(--white);
 }
 
 .nav-links {
-    list-style: none;
     display: flex;
     gap: 2rem;
+    list-style: none;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
 }
 
 /* Hero Section */
-.hero-section {
+.hero {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 5rem 0;
+    justify-content: space-around;
+    padding: 5rem 2rem;
 }
 
 .hero-content {
@@ -54,70 +69,83 @@ body {
 
 .hero-content h1 {
     font-size: 3rem;
-    color: #20303C;
+    margin-bottom: 1rem;
 }
 
 .hero-content span {
-    color: rgb(153, 156, 104); /* Color 42 - Green */
+    color: var(--color-green);
 }
 
-.hero-content .btn {
+.btn {
     display: inline-block;
     margin-top: 1rem;
-    background-color: rgb(153, 156, 104);
-    color: white;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1.5rem;
+    background-color: var(--color-green);
+    color: var(--white);
     text-decoration: none;
+    border-radius: 4px;
 }
 
 .hero-image img {
-    width: 300px;
+    max-width: 250px;
+    border: 5px solid var(--color-green);
     border-radius: 50%;
-    border: 5px solid rgb(153, 156, 104);
 }
 
-/* Sections */
-.section {
-    padding: 4rem 0;
+/* About Section */
+.about {
+    padding: 3rem 2rem;
+    background-color: var(--white);
     text-align: center;
 }
 
-.about-section, .skills-section, .projects-section {
-    background-color: rgb(248, 246, 243);
-    color: #20303C;
+/* Skills Section */
+.skills {
+    background-color: var(--color-green);
+    color: var(--white);
+    padding: 3rem 2rem;
 }
 
 .skills-grid {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-top: 2rem;
 }
 
 .skill-card {
-    background-color: #fff;
+    background: var(--white);
+    color: var(--text-dark);
     padding: 1.5rem;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Projects Section */
+.projects {
+    padding: 3rem 2rem;
+}
+
+.project-card {
+    background: var(--white);
+    margin: 1rem auto;
+    padding: 1.5rem;
+    width: 80%;
+    border-left: 5px solid var(--color-green);
+    border-radius: 4px;
 }
 
 /* Contact Section */
-.contact-section {
-    background-color: rgb(186, 185, 182); /* Color 38 */
-    color: white;
-    padding: 3rem 1rem;
-}
-
-.contact-section .btn {
-    display: inline-block;
-    background-color: #20303C;
-    color: white;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-}
-
-footer {
-    margin-top: 2rem;
+.contact {
     text-align: center;
-    font-size: 0.9rem;
+    padding: 2rem;
+    background: var(--color-green);
+    color: var(--white);
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--color-grey);
+    color: var(--black);
 }
