@@ -64,19 +64,23 @@ h2 {
 .nav-links a {
     display: inline-block;
     text-decoration: none;
-    color: var(--white);
+    color: var(--white); /* Text remains white */
     font-weight: bold;
-    padding: 0.3rem 1.2rem;
-    border: 2px solid transparent; /* Border initially invisible */
+    padding: 0.3rem 1rem; /* Compact padding */
+    border: 2px solid transparent; /* Transparent border by default */
     border-radius: 5px;
-    transition: all 0.3s ease-in-out; /* Smooth effect */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
 }
 
-.nav-links a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
-    color: var(--white); /* Keeps text white */
-    border-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white border */
+.nav-links a:hover,
+.nav-links a:focus,
+.nav-links a:active {
+    background-color: rgba(255, 255, 255, 0.2); /* Translucent white background */
+    color: var(--white); /* Text stays white */
+    border-color: rgba(255, 255, 255, 0.3); /* Subtle white border */
+    outline: none; /* Removes browser focus outline */
 }
+
 
 
 /* Hero Section */
