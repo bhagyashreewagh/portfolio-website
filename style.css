@@ -333,5 +333,7 @@ h2 {
     margin-top: 1.5rem;
     color: #333; /* Dark grey text */
     list-style: none;
-    padding: 0;
+    justify-content: center;
+    align-items: center;
+
 }
