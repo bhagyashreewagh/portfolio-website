@@ -33,11 +33,13 @@ h2 {
 /* Navigation Bar */
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Keeps logo and links aligned */
     align-items: center;
     background-color: var(--color-green);
-    padding: 3rem 2rem;
+    padding: 1rem 5%; /* Add padding on both sides */
     color: var(--white);
+    max-width: 1200px; /* Center-align with max-width */
+    margin: 0 auto; /* Center the header container */
 }
 
 .nav-links {
@@ -88,10 +90,10 @@ h2 {
 }
 
 .hero-image img {
-    width: 220px; /* Adjusted width */
+    width: 245px; /* Adjusted width */
     height: 280px; /* Taller height for stronger oval effect */
     border: 4px solid var(--color-green);
-    border-radius: 50% / 70%; /* More pronounced oval */
+    border-radius: 50% / 60%; /* More pronounced oval */
     object-fit: cover; /* Ensures the image stays proportional */
 }
 
@@ -143,13 +145,13 @@ h2 {
 .contact {
     text-align: center;
     padding: 2rem;
-    background: var(--color-green);
-    color: var(--white);
+    background: var(--color-grey);
+    color: var(--black);
 }
 
 .footer {
     text-align: center;
     padding: 1rem;
-    background-color: var(--color-green);
-    color: var(--white);
+    background-color: var(--color-grey);
+    color: var(--black);
 }
