@@ -161,7 +161,6 @@ h2 {
 .about p {
     font-size: 1.1rem;
     max-width: 700px; /* Restrict width for readability */
-    margin: 0 auto; /* Center text block */
     color: #555555; /* Softer text color */
 }
 
