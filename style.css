@@ -4,9 +4,6 @@
     --color-beige: rgb(248, 246, 243); /* From --color_11 */
     --text-dark: #20203c;
     --white: #ffffff;
-    --black: #000000;
-    --color-grey: rgb(186, 185, 182); /* From --color_38 */
-
 }
 
 /* General Reset */
@@ -140,13 +137,13 @@ h2 {
 .contact {
     text-align: center;
     padding: 2rem;
-    background: var(--color-grey);
-    color: var(--black);
+    background: var(--color-green);
+    color: var(--white);
 }
 
 .footer {
     text-align: center;
     padding: 1rem;
-    background-color: var(--color-grey);
-    color: var(--black);
+    background-color: var(--color-green);
+    color: var(--white);
 }
