@@ -143,8 +143,8 @@ h2 {
 /* About Section */
 /* About Me Section - Improved Design */
 .about {
-    background-color: #dbe2ef; /* Lighter grey */
-    color: #333333; /* Darker text for contrast */
+    background-color: var(--color-grey); /* Lighter grey */
+    color: #0000; /* Darker text for contrast */
     text-align: center;
     padding: 4rem 2rem; /* Add breathing space */
     line-height: 1.8; /* Elegant line spacing */
