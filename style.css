@@ -169,6 +169,50 @@ h2 {
     color: #333333; /* Slightly darker emphasis */
 }
 
+  /* Skill scroll bar */
+	  
+	  #skills_section {
+		  background-color: white;
+		  border-radius: 250px;
+	  }
+	  #skills_section h2 {
+		  margin-bottom: 70px;
+	  }
+
+	  #skills_section .slide {
+
+	  }
+	  .slide-track {
+		overflow: hidden;
+		display: flex;
+		/* height: 150px; */
+		/* width: 1440px; */
+		margin: 0 auto;
+	  }
+	  
+	  .slide-track div {
+		/* height: 400px; 
+		min-width: 300px; */
+		/* margin-left: 100px; */
+	  }
+
+	  @keyframes slide {
+		0% {
+		  transform: translate3d(0, 0, 0);
+		}
+		100% {
+		  transform: translate3d(-4540px, 0, 0); /* Adjust a combination of this number and the speed below for the perfect animation */
+		}
+	  }
+
+	  .slide-track div {
+		height: 150px;
+		width: auto;
+		/* min-width: 300px; */
+		object-fit: cover;
+		margin-left: 200px;
+		animation: slide 15s linear infinite; /*Adjust a combination of this speed and the number above for the perfect animation*/
+	  }
 
 
 /* Icons Side Bar */
