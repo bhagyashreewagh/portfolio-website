@@ -280,6 +280,17 @@ h2 {
 /* Blogs Section */
 
 
+/* Center the Blogs Section */
+.blogs {
+    background-color: var(--color-beige);
+    padding: 4rem 0;
+    text-align: center;
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Align items in a column */
+}
+
 /* Individual Blog Card */
 .blog-card {
     background: #ffffff;
@@ -287,9 +298,10 @@ h2 {
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     overflow: hidden;
-    width: 500px; /* Adjust card width slightly */
+    width: 500px; /* Adjust card width */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    margin: 0 auto; /* Center the card within the container */
 }
 
 .blog-card:hover {
@@ -300,7 +312,7 @@ h2 {
 /* Blog Card Image */
 .blog-card img {
     width: 100%;
-    height: 280px; /* Rectangular image */
+    height: 350px; /* Increase height to avoid compression */
     object-fit: cover; /* Ensure proportional scaling */
 }
 
@@ -310,7 +322,7 @@ h2 {
 }
 
 .blog-content h3 {
-    font-size: 1.7rem; /* Slightly larger title */
+    font-size: 1.8rem; /* Larger and more elegant */
     font-weight: 600; /* Elegant weight */
     margin-bottom: 1rem;
     color: #222222; /* Darker shade for professional look */
@@ -335,7 +347,6 @@ h2 {
     line-height: 1.6; /* Better text readability */
     margin: 0;
 }
-
 
 /* Contact Section */
 .contact {
