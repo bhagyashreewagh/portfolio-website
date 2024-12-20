@@ -1,70 +1,349 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhagyashree Wagh Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-container">
-            <div class="site-title">PORTFOLIO</div>
-            <ul class="nav-links">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </header>
+/* Variables for Colors */
+:root {
+    --color-green: rgb(153, 156, 104); /* From --color_42 */
+    --color-beige: rgb(248, 246, 243); /* From --color_11 */
+    --color-grey: rgb(186, 185, 182); /* From --color_11 */
+    --text-dark: #20203c;
+    --white: #ffffff;
+    --black: #000000;
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span>Bhagyashree Wagh</span> <span class="wave">👋</span></h1>
-            <p>AI Enthusiast | Data Engineer | Master of Science in Information Management</p>
-            <a href="#about" class="btn">Learn More</a>
-        </div>
-        <div class="hero-image">
-            <img src="images/2424847.jpg" alt="Bhagyashree Wagh">
-        </div>
-    </section>
+}
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="about-content">
-            <h2>About Me</h2>
-            <p>
-                I'm passionate about building <strong>AI-driven solutions</strong> to solve real-world problems. 
-                With a Master's degree in <strong>Information Management</strong> and a focus on AI, 
-                I specialize in <strong>data analysis</strong>, <strong>machine learning</strong>, 
-                and <strong>process optimization</strong>.
-            </p>
-        </div>
-    </section>
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <!-- Skills Section -->
-    <section id="skills_section">
-        <h2>Skills & Tools</h2>
-        <div class="slide-track">
-            <div class="slide"><img src="images/python.png" alt="Python" /></div>
-            <div class="slide"><img src="images/postgresql.png" alt="PostgreSQL" /></div>
-            <div class="slide"><img src="images/hadoop.png" alt="Hadoop" /></div>
-        </div>
-    </section>
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    background-color: var(--color-beige);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
 
-    <!-- Footer -->
-    <footer id="footer">
-        <ul class="icons">
-            <li><a href="mailto:bwagh@uw.com"><img src="https://img.icons8.com/ios-glyphs/60/000000/email.png" alt="Email" /></a></li>
-            <li><a href="https://www.linkedin.com/in/bwaghuw/"><img src="https://img.icons8.com/ios-glyphs/60/000000/linkedin.png" alt="LinkedIn" /></a></li>
-            <li><a href="https://github.com/bhagyashreewagh"><img src="https://img.icons8.com/ios-glyphs/60/000000/github.png" alt="GitHub" /></a></li>
-        </ul>
-        <ul class="copyright">
-            <li>&copy; 2024 Bhagyashree Wagh. All Rights Reserved.</li>
-        </ul>
-    </footer>
-</body>
-</html>
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+/* Navigation Bar */
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: center; /* Centers container */
+    align-items: center;
+    background-color: var(--color-green);
+    padding: 1.4rem 0;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Title on left, nav on right */
+    align-items: center;
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: bold;
+    width: 80%; /* Adjust this for more/less spacing from edges */
+    margin: 0 auto; /* Centers the content container */
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 2rem; /* Spacing between links */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--white); /* Text remains white */
+    font-weight: bold;
+    padding: 0.3rem 1rem; /* Compact padding */
+    border: 2px solid transparent; /* Transparent border by default */
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.nav-links a:hover,
+.nav-links a:focus,
+.nav-links a:active {
+    background-color: rgba(255, 255, 255, 0.2); /* Translucent white background */
+    color: var(--white); /* Text stays white */
+    border-color: rgba(255, 255, 255, 0.3); /* Subtle white border */
+    outline: none; /* Removes browser focus outline */
+}
+
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6rem 6rem;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content span {
+    color: var(--color-green);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background-color: var(--color-green);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.hero-image img {
+    width: 255px; /* Adjusted width */
+    height: 280px; /* Taller height for stronger oval effect */
+    border: 4px solid var(--color-green);
+    border-radius: 50% / 60%; /* More pronounced oval */
+    object-fit: cover; /* Ensures the image stays proportional */
+}
+
+/* Waving hand animation */
+.wave {
+    display: inline-block;
+    font-size: 2rem; /* Adjust size as needed */
+    animation: wave-animation 1.5s infinite ease-in-out;
+    transform-origin: 70% 70%; /* Pivot point for the waving */
+}
+
+/* Keyframes for waving motion */
+@keyframes wave-animation {
+    0%, 100% { transform: rotate(0deg); }
+    20% { transform: rotate(20deg); }
+    40% { transform: rotate(-10deg); }
+    60% { transform: rotate(10deg); }
+    80% { transform: rotate(-5deg); }
+}
+
+
+/* About Section */
+.about {
+    background-color: #c4c4c4; /* Grey background */
+    color: var(--text-dark); /* Dark text color */
+    text-align: center; /* Center align the text */
+    padding: 3rem 1rem; /* Add vertical padding and small horizontal padding */
+    margin: 0; /* Remove any default margins */
+    width: 100%; /* Make background stretch to the edges */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.about-content {
+    max-width: 1000px; /* Constrain text width */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 0 2rem; /* Add margin inside the text content */
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+
+
+  /* Skill scroll bar */
+	  
+/* Skills Section - Tube with Scrolling Icons */
+#skills_section {
+    background-color: var(--white); /* White tube color */
+    padding: 5.5rem 0; /* Vertical padding */
+    border-radius: 50px; /* Tube effect with rounded edges */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 80%; /* Restrict width to center */
+    margin: 5rem auto; /* Center horizontally */
+    overflow: hidden; /* Hide overflow for smooth sliding */
+}
+
+#skills_section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-top: -1.5rem; /* Move the heading upwards */
+    margin-bottom: 1rem; /* Reduce bottom margin */
+
+}
+
+/* Horizontal Scrolling Container */
+.slide-track {
+    display: flex;
+    animation: scroll 10s linear infinite; /* Smooth horizontal scroll */
+    width: calc(350px * 12); /* Adjust for the total number of images */
+    gap: 3rem; /* Space between images */
+}
+
+/* Individual Slides */
+.slide {
+    flex: 0 0 auto; /* Prevent shrinking */
+    width: 350px; /* Larger image containers */
+}
+
+.slide img {
+    width: 100%; /* Fill container */
+    height: 100px; /* Fixed height for consistency */
+    object-fit: contain; /* Ensure images retain proportions */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect to Enlarge Images */
+.slide img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Keyframes for Smooth Scrolling */
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Start at the left */
+    }
+    100% {
+        transform: translateX(-50%); /* Move left by half the width */
+    }
+}
+
+
+/* Icons Side Bar */
+
+	  .side.icons {
+		position: fixed;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		vertical-align: middle;
+	  }
+
+	  ul.side.icons {
+		padding: 0px 5px 5px 5px;
+		background:rgba(0, 0, 0, 0.2);
+		/* border-radius: 15px; */
+		border-top-right-radius: 17px;
+		border-bottom-right-radius: 17px;
+	  }
+	  
+	  .side.icons a {
+		display: block;
+		text-align: center;
+		/* padding: 16px; */
+		transition: all 0.3s ease;
+		color: white;
+		font-size: 14px;
+	  }
+	  ul.side.icons a.circle {
+		  margin-top: 12px;
+
+	  }
+	  
+	  
+
+
+/* Projects Section */
+.projects {
+    padding: 3rem 2rem;
+}
+
+.project-card {
+    background: var(--white);
+    margin: 1rem auto;
+    padding: 1.5rem;
+    width: 80%;
+    border-left: 5px solid var(--color-green);
+    border-radius: 4px;
+}
+
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 2rem;
+    background: var(--color-grey);
+    color: var(--black);
+}
+
+* Footer */
+/* Footer Section */
+#footer {
+    background-color: var(--color-grey); /* Grey background */
+    text-align: center; /* Center-align all content */
+    padding: 1rem 0; /* Top and bottom padding */
+    width: 100%;
+    margin: 0; /* Remove default margins */
+    box-sizing: border-box; /* Include padding in total width */
+}
+
+/* Social Icons */
+#footer .icons {
+    display: flex; /* Horizontal alignment */
+    justify-content: center; /* Center-align horizontally */
+    align-items: center; /* Center-align vertically */
+    gap: 2rem; /* Space between icons */
+    list-style: none; /* Remove default bullets */
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-grey); /* Grey background */
+
+}
+
+#footer .icons li {
+    display: inline-block;
+}
+
+#footer .icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s ease; /* Add smooth hover effect */
+}
+
+#footer .icons a:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+#footer .icons img {
+    width: 50px; /* Set icon size */
+    height: 50px;
+
+}
+
+/* Copyright Styling */
+#footer .copyright {
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+    color: #333; /* Dark grey text */
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center align the text */
+    background-color: var(--color-grey); /* Grey background */
+}
+.contact, #footer {
+    background-color: var(--color-grey); /* Uniform grey background */
+}
+
