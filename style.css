@@ -89,6 +89,8 @@ h2 {
     align-items: center;
     justify-content: space-around;
     padding: 6rem 6rem;
+    font-family: 'Georgia';
+
 }
 
 .hero-content {
@@ -97,6 +99,7 @@ h2 {
 
 .hero-content h1 {
     font-size: 3rem;
+    font-family: 'Georgia';
     margin-bottom: 1rem;
 }
 
