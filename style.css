@@ -104,7 +104,7 @@ h2 {
 }
 
 .hero-content p {
-    font-size: 2.2rem;
+    font-size: 1.4rem;
     font-family: 'Georgia';
     margin-bottom: 1rem;
 }
@@ -289,15 +289,19 @@ h2 {
 /* Blogs Section */
 
 
-/* Center the Blogs Section */
+/* Blogs Section */
 .blogs {
     background-color: var(--color-beige);
-    padding: 4rem 0;
+    padding: 4rem 2rem;
     text-align: center;
-    display: flex; /* Flexbox for centering */
+}
+
+/* Container for Blog Cards */
+.blog-cards {
+    display: flex; /* Enable side-by-side alignment */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 2rem; /* Space between cards */
     justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    flex-direction: column; /* Align items in a column */
 }
 
 /* Individual Blog Card */
@@ -307,10 +311,9 @@ h2 {
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     overflow: hidden;
-    width: 500px; /* Adjust card width */
+    width: 300px; /* Adjust card width */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
-    margin: 0 auto; /* Center the card within the container */
 }
 
 .blog-card:hover {
@@ -321,40 +324,39 @@ h2 {
 /* Blog Card Image */
 .blog-card img {
     width: 100%;
-    height: 350px; /* Increase height to avoid compression */
-    object-fit: cover; /* Ensure proportional scaling */
+    height: 200px; /* Adjust height */
+    object-fit: cover; /* Keep proportions */
 }
 
 /* Blog Card Content */
 .blog-content {
-    padding: 2rem 1.5rem; /* Adjusted padding for spacing */
+    padding: 1.5rem;
 }
 
 .blog-content h3 {
-    font-size: 1.8rem; /* Larger and more elegant */
-    font-weight: 600; /* Elegant weight */
+    font-size: 1.5rem;
+    font-weight: 600;
     margin-bottom: 1rem;
-    color: #222222; /* Darker shade for professional look */
-    font-family: 'Georgia', serif; /* Elegant serif font */
-    line-height: 1.5; /* Increase line spacing */
+    color: #222222;
+    font-family: 'Georgia', serif;
+    line-height: 1.5;
 }
 
 .blog-content h3 a {
     text-decoration: none;
-    color: #222222; /* Matching darker shade */
+    color: #222222;
     transition: color 0.3s ease;
 }
 
 .blog-content h3 a:hover {
-    color: #0056a3; /* Subtle blue hover effect */
+    color: #0056a3;
 }
 
 .blog-content p {
-    font-size: 1.2rem; /* Refined description size */
-    color: #555555; /* Softer dark grey */
-    font-family: 'Arial', sans-serif; /* Clean sans-serif font for contrast */
-    line-height: 1.6; /* Better text readability */
-    margin: 0;
+    font-size: 1.1rem;
+    color: #555555;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
 }
 
 /* Contact Section */
