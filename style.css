@@ -103,6 +103,12 @@ h2 {
     margin-bottom: 1rem;
 }
 
+.hero-content p {
+    font-size: 2.2rem;
+    font-family: 'Georgia';
+    margin-bottom: 1rem;
+}
+
 .hero-content span {
     color: var(--color-green);
 }
