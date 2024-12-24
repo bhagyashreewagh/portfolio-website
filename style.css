@@ -2,7 +2,7 @@
 :root {
     --color-green: rgb(153, 156, 104);
     --color-light-beige: rgb(248, 246, 243);
-    --color-dark-beige: rgb(237, 230, 221);
+    --color-dark-beige: rgb(235, 229, 219);
     --color-grey: rgb(186, 185, 182);
     --text-dark: #20203c;
     --white: #ffffff;
@@ -50,7 +50,7 @@ body {
 }
 
 .main-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: bold;
     font-family: 'Playfair Display', serif;
     color: var(--text-dark);
