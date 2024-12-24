@@ -6,6 +6,7 @@
     --color-grey: rgb(186, 185, 182);
     --text-dark: #20203c;
     --white: #ffffff;
+    --black: #000000;
 }
 
 /* General Reset */
@@ -101,7 +102,7 @@ body {
 }
 
 .hero-image-card {
-    background-color: var(--white);
+    background-color: var(color-grey);
     padding: 2rem;
     text-align: center;
     border-radius: 12px;
@@ -109,8 +110,8 @@ body {
 }
 
 .hero-image img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 250px;
     border-radius: 50%;
     border: 3px solid var(--color-grey);
 }
@@ -131,8 +132,8 @@ body {
 
 .social-icons .social-icon {
     font-size: 1rem;
-    background-color: var(--color-grey);
-    padding: 0.5rem;
+    background-color: var(black);
+    padding: 1.0rem;
     border-radius: 50%;
     color: var(--white);
     text-decoration: none;
@@ -150,7 +151,7 @@ body {
 }
 
 .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     margin-bottom: 1.5rem;
 }
 
@@ -158,8 +159,9 @@ body {
     padding: 0.8rem 1.5rem;
     margin-right: 1rem;
     border: 2px solid var(--color-green);
-    background-color: transparent;
-    color: var(--color-green);
+	    background-color: var(--color-green);
+    color: var(--white);
+
     font-weight: bold;
     text-decoration: none;
     border-radius: 8px;
@@ -167,8 +169,9 @@ body {
 }
 
 .cta-buttons .btn:hover {
-    background-color: var(--color-green);
-    color: var(--white);
+	    background-color: transparent;
+    color: var(--color-green);
+
 }
 
 
