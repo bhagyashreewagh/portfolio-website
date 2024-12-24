@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'Georgia', Arial, sans-serif;
     font-weight: 400;
     background-color: var(--color-beige);
     color: var(--text-dark);
@@ -96,8 +96,8 @@ body {
 
 .hero-image {
     position: relative;
-    background-color: var(--white);
-    padding: 1.5rem;
+    background-color: var(--color-grey);
+    padding: 1.8rem;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -132,7 +132,7 @@ body {
 .hero-caption .product-buff {
     font-size: 0.9rem;
     color: var(--color-grey);
-    font-weight: normal;
+    font-weight: bold;
     letter-spacing: 0.1rem;
 }
 
