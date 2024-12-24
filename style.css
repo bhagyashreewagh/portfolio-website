@@ -89,7 +89,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4rem;
+    padding: 6rem;
     font-family: 'Georgia', serif;
     background-color: var(--color-beige);
 }
@@ -101,6 +101,8 @@ body {
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-left: 3rem; /* Add margin to bring it closer to the center-right */
+
 }
 
 .hero-image img {
