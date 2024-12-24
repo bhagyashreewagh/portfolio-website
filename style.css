@@ -1,12 +1,11 @@
 /* Variables for Colors */
 :root {
-    --color-green: rgb(153, 156, 104);
-    --color-light-beige: rgb(248, 246, 243);
-    --color-dark-beige: rgb(235, 229, 219);
-    --color-grey: rgb(186, 185, 182);
-    --text-dark: #20203c;
-    --white: #ffffff;
-    --black: #000000;
+    --color-green: rgb(153, 156, 104); /* Matches header and button color */
+    --color-beige: rgb(248, 246, 243); /* Matches background color */
+    --color-grey: rgb(186, 185, 182); /* Matches muted text color */
+    --text-dark: #20203c; /* Matches primary text color */
+    --white: #ffffff; /* Standard white */
+    --black: #000000; /* Standard black */
 }
 
 /* General Reset */
@@ -17,70 +16,68 @@
 }
 
 body {
-    font-family: 'Playfair Display', Arial, sans-serif;
-    background-color: var(--white);
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+    background-color: var(--color-beige);
     color: var(--text-dark);
     line-height: 1.6;
 }
 
 /* Header Styling */
 .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--white);
+    padding: 1.4rem 0;
+    width: 100%;
     border-bottom: 1px solid var(--color-grey);
-    padding: 1rem 0;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
     width: 80%;
     margin: 0 auto;
+    color: var(--text-dark);
 }
 
-/* Header Title */
 .site-title {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    font-family: 'Georgia', serif;
 }
 
 .logo-leaf {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: rgb(246, 180, 142);
 }
 
-.main-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-family: 'Georgia', serif;
-    color: var(--text-dark);
+.divider {
+    font-size: 1rem;
+    color: var(--color-grey);
 }
 
 .subtitle {
-    font-size: 1.5rem;
+    font-weight: normal;
     color: var(--color-grey);
 }
 
-.divider {
-    font-size: 1.2rem;
-    font-family: 'Georgia', serif;
-
-    color: var(--color-grey);
-}
-
-/* Navigation Links */
 .nav-links {
     display: flex;
     gap: 2rem;
+    list-style: none;
 }
 
 .nav-links a {
     text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 600;
     color: var(--text-dark);
-    transition: color 0.3s ease;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
@@ -92,73 +89,82 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5rem 10%;
+    padding: 6rem;
+    font-family: 'Georgia', serif;
+    background-color: var(--color-beige);
 }
 
-/* Left Section */
-.hero-left {
-    flex: 1;
-    max-width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--color-dark-beige);
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.hero-image-card {
-    background-color: var(--color-light-beige);
+.hero-image {
+    position: relative;
+    background-color: var(--white);
+    padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 2rem;
-    max-width: 300px;
 }
 
 .hero-image img {
-    width: 120px;
-    height: 120px;
+    width: 255px;
+    height: 280px;
     border-radius: 50%;
-    border: 3px solid var(--color-grey);
     object-fit: cover;
+    margin-bottom: 1rem;
 }
 
 .hero-caption {
+    text-align: center;
     margin-top: 1rem;
 }
 
-.journey-title {
+.hero-caption .journey-title {
     font-size: 1.2rem;
     font-weight: bold;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
 }
 
-.product-buff {
+.hero-caption hr {
+    width: 50px;
+    border: 1px solid var(--color-grey);
+    margin: 0.5rem auto;
+}
+
+.hero-caption .product-buff {
     font-size: 0.9rem;
     color: var(--color-grey);
+    font-weight: normal;
+    letter-spacing: 0.1rem;
+}
+
+.social-icons {
+    margin-top: 1rem;
 }
 
 .social-icons .social-icon {
-    font-size: 1rem;
-    background-color: var(--color-grey);
-    padding: 0.5rem;
-    border-radius: 50%;
-    color: var(--white);
+    font-size: 1.2rem;
+    color: var(--text-dark);
     text-decoration: none;
+    background-color: var(--color-grey);
+    padding: 0.3rem 0.6rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
 }
 
-/* Right Hero Section */
+.social-icons .social-icon:hover {
+    background-color: var(--color-green);
+    color: var(--white);
+}
+
 .hero-content {
-    flex: 1;
     max-width: 50%;
-    padding-left: 2rem;
+    margin-left: 3rem;
 }
 
 .hero-content h1 {
     font-size: 3.5rem;
-    font-family: 'Georgia', serif;
     margin-bottom: 1rem;
+    color: var(--text-dark);
+    font-family: 'Georgia', serif;
 }
 
 .hero-content span {
@@ -168,25 +174,23 @@ body {
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .cta-buttons .btn {
-    padding: 0.8rem 1.8rem;
     margin-right: 1rem;
-    border: 2px solid var(--color-green);
-	    background-color: var(--color-green);
+    padding: 0.8rem 1.5rem;
+    background-color: var(--color-green);
     color: var(--white);
-
-    font-weight: bold;
     text-decoration: none;
-    border-radius: 8px;
-    transition: all 0.3s ease;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .cta-buttons .btn:hover {
-	    background-color: transparent;
-    color: var(--color-green);
-
+    background-color: #a4a658;
 }
 
 
