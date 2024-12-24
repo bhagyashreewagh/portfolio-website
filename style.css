@@ -89,7 +89,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 6rem;
+    padding: 4rem;
     font-family: 'Georgia', serif;
     background-color: var(--color-beige);
 }
@@ -190,8 +190,8 @@ body {
 }
 
 .cta-buttons .btn:hover {
-    background-color: #a4a658;
-}
+    color: var(--text-dark);
+    background-color: var(--color-grey);}
 
 
 /* Waving hand animation */
