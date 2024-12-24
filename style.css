@@ -1,10 +1,11 @@
+/* Variables for Colors */
 :root {
     --color-green: rgb(153, 156, 104);
-    --color-light-beige: rgb(248, 246, 243);
-    --color-dark-beige: rgb(237, 230, 221);
+    --color-beige: rgb(248, 246, 243);
     --color-grey: rgb(186, 185, 182);
     --text-dark: #20203c;
     --white: #ffffff;
+    --black: #000000;
 }
 
 /* General Reset */
@@ -16,16 +17,19 @@
 
 body {
     font-family: 'Poppins', Arial, sans-serif;
-    background-color: var(--color-light-beige);
+    background-color: var(--white);
     color: var(--text-dark);
     line-height: 1.6;
 }
 
 /* Header Styling */
 .header {
-    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.4rem 0;
+    width: 100%;
     border-bottom: 1px solid var(--color-grey);
-    padding: 1rem 0;
 }
 
 .header-container {
@@ -36,50 +40,41 @@ body {
     margin: 0 auto;
 }
 
-/* Header Title */
 .site-title {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
     font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
 }
 
-.main-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--text-dark);
+.logo-leaf {
+    font-size: 1.2rem;
+    color: rgb(246, 180, 142);
 }
 
-.subtitle {
-    font-family: 'Poppins', sans-serif;
+.divider {
     font-size: 1rem;
     color: var(--color-grey);
 }
 
-.divider {
-    font-size: 1.2rem;
+.subtitle {
     color: var(--color-grey);
 }
 
-/* Navigation Links */
 .nav-links {
     display: flex;
     gap: 2rem;
 }
 
 .nav-links a {
-    font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
     color: var(--text-dark);
-    transition: color 0.3s ease;
+    font-weight: bold;
 }
 
 .nav-links a:hover {
     color: var(--color-green);
 }
+
 
 /* Hero Section */
 .hero {
