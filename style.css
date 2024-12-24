@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: 'Poppins', Arial, sans-serif;
+    font-family: 'Playfair Display', Arial, sans-serif;
     background-color: var(--white);
     color: var(--text-dark);
     line-height: 1.6;
@@ -50,19 +50,21 @@ body {
 }
 
 .main-title {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     font-family: 'Playfair Display', serif;
     color: var(--text-dark);
 }
 
 .subtitle {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: var(--color-grey);
 }
 
 .divider {
     font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+
     color: var(--color-grey);
 }
 
@@ -74,7 +76,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--text-dark);
     transition: color 0.3s ease;
