@@ -1,11 +1,10 @@
-/* Variables for Colors */
 :root {
-    --color-green: rgb(153, 156, 104); /* Matches button and accent color */
-    --color-light-beige: rgb(248, 246, 243); /* Lighter beige for right background */
-    --color-dark-beige: rgb(237, 230, 221); /* Darker beige for left background */
-    --color-grey: rgb(186, 185, 182); /* Matches muted text color */
-    --text-dark: #20203c; /* Matches primary text color */
-    --white: #ffffff; /* Standard white */
+    --color-green: rgb(153, 156, 104);
+    --color-light-beige: rgb(248, 246, 243);
+    --color-dark-beige: rgb(237, 230, 221);
+    --color-grey: rgb(186, 185, 182);
+    --text-dark: #20203c;
+    --white: #ffffff;
 }
 
 /* General Reset */
@@ -24,12 +23,9 @@ body {
 
 /* Header Styling */
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.4rem 0;
-    width: 100%;
+    background-color: var(--white);
     border-bottom: 1px solid var(--color-grey);
+    padding: 1rem 0;
 }
 
 .header-container {
@@ -40,35 +36,49 @@ body {
     margin: 0 auto;
 }
 
+/* Header Title */
 .site-title {
     display: flex;
     align-items: center;
+    gap: 0.5rem;
     font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
 }
 
-.logo-leaf {
-    font-size: 1.2rem;
-    color: rgb(246, 180, 142);
+.main-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-dark);
 }
 
-.divider {
+.subtitle {
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     color: var(--color-grey);
 }
 
-.subtitle {
+.divider {
+    font-size: 1.2rem;
     color: var(--color-grey);
 }
 
+/* Navigation Links */
 .nav-links {
     display: flex;
     gap: 2rem;
 }
 
 .nav-links a {
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
     color: var(--text-dark);
-    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--color-green);
 }
 
 /* Hero Section */
@@ -76,14 +86,13 @@ body {
     display: flex;
     align-items: center;
     padding: 6rem 10%;
+    gap: 2rem;
 }
 
-/* Left Section with Darker Beige Background */
 .hero-left-bg {
     background-color: var(--color-dark-beige);
     padding: 3rem;
     border-radius: 12px;
-    margin-right: 2rem;
 }
 
 .hero-image-card {
@@ -115,10 +124,6 @@ body {
     color: var(--color-grey);
 }
 
-.social-icons {
-    margin-top: 1rem;
-}
-
 .social-icons .social-icon {
     font-size: 1rem;
     background-color: var(--color-grey);
@@ -128,24 +133,18 @@ body {
     text-decoration: none;
 }
 
-/* Right Section */
-.hero-right {
-    flex: 1;
-    padding: 2rem;
-    background-color: var(--color-light-beige);
-}
-
-.hero-right h1 {
+/* Right Hero Section */
+.hero-content h1 {
     font-size: 3.5rem;
     font-family: 'Playfair Display', serif;
     margin-bottom: 1rem;
 }
 
-.hero-right span {
+.hero-content span {
     color: var(--color-green);
 }
 
-.hero-right p {
+.hero-content p {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
 }
@@ -166,7 +165,6 @@ body {
     background-color: var(--color-green);
     color: var(--white);
 }
-
 /* Waving hand animation */
 .wave {
     display: inline-block;
