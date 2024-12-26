@@ -119,7 +119,7 @@ body {
 }
 
 .hero-caption .journey-title {
-    font-size: 1.2rem;
+    font-size: 1 rem;
     font-weight: bold;
     color: var(--text-dark);
     margin-bottom: 0.5rem;
@@ -163,7 +163,7 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 3.1rem;
     margin-bottom: 1rem;
     color: var(--text-dark);
     font-family: 'Georgia', serif;
