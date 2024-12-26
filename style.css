@@ -163,7 +163,7 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 3.2 rem;
+    font-size: 3.5 rem;
     margin-bottom: 1rem;
     color: var(--text-dark);
     font-family: 'Georgia', serif;
@@ -449,7 +449,7 @@ body {
 }
 
 #resume button {
-  background-color: #89ab8a; /* Elegant green button */
+  background-color: --var(color-green); /* Elegant green button */
   color: #fff;
   padding: 12px 25px;
   font-size: 16px;
