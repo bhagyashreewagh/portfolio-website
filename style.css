@@ -424,6 +424,49 @@ body {
     line-height: 1.6;
 }
 
+/* Resume Section Styles */
+#resume {
+  background: #d9e8dc; /* Soft elegant green */
+  padding: 50px 20px;
+  text-align: center;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  border-radius: 10px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#resume h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c4d34; /* Dark green for the title */
+}
+
+#resume p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #4a6148; /* Muted green-gray for the text */
+}
+
+#resume button {
+  background-color: #89ab8a; /* Elegant green button */
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#resume button:hover {
+  background-color: #6f946f; /* Slightly darker green on hover */
+  transform: scale(1.05); /* Gentle zoom effect on hover */
+}
+
+
 /* Contact Section */
 .contact {
     text-align: center;
