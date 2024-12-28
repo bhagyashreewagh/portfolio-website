@@ -426,7 +426,7 @@ body {
 
 /* Resume Section Styles */
 #resume {
-  background: #d9e8dc; /* Soft elegant green */
+  background: var(--color-green); /* Soft elegant green */
   padding: 50px 20px;
   text-align: center;
   color: #333;
@@ -439,7 +439,7 @@ body {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #2c4d34; /* Dark green for the title */
+  color: var(black); /* Dark green for the title */
 }
 
 #resume p {
@@ -462,7 +462,7 @@ body {
 }
 
 #resume button:hover {
-  background-color: #6f946f; /* Slightly darker green on hover */
+  background-color: var(--color-beige); /* Slightly darker green on hover */
   transform: scale(1.05); /* Gentle zoom effect on hover */
 }
 
