@@ -433,7 +433,7 @@ body {
   background: var(--color-green); /* Soft elegant green */
   padding: 50px 20px;
   text-align: center;
-  color: #333;
+  color: #0000;
   font-family: 'Arial', sans-serif;
   border-radius: 10px; /* Rounded corners for a softer look */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -454,7 +454,7 @@ body {
 
 #resume button {
   background-color: --var(color-green); /* Elegant green button */
-  color: #000;
+  color: #0000;
   padding: 12px 25px;
   font-size: 16px;
   font-weight: bold;
