@@ -352,10 +352,13 @@ body {
     border-radius: 4px;
 }
 
-/* Blogs Section */
-
 
 /* Blogs Section */
+
+#blogs h2 {
+    margin-bottom: 20px; /* Adjust this value for more or less spacing */
+    text-align: center; /* Optional: Center the heading */
+}
 .blogs {
     background-color: var(--color-beige);
     padding: 4rem 3rem;
