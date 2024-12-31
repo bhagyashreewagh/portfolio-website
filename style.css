@@ -163,7 +163,7 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 4.5rem; /* Increase the size */
+    font-size: 4.3rem; /* Increase the size */
     margin-bottom: 1rem;
     color: var(--text-dark);
     font-family: 'Georgia', serif;
