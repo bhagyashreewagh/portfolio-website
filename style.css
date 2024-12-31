@@ -339,6 +339,12 @@ body {
 
 
 /* Projects Section */
+
+#projects h2{
+    margin: 1rem auto;
+    padding: 1.5rem;
+}
+	
 .projects {
     padding: 3rem 2rem;
 }
