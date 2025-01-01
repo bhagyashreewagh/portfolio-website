@@ -380,9 +380,8 @@ body {
   border-left: 5px solid var(--color-green);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 2.0rem;
 
   text-align: center;
   padding: 1.5rem;
