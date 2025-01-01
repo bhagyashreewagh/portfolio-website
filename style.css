@@ -365,10 +365,17 @@ color: var(--text-dark); /* Dark text color */
 
 /* Blogs Section */
 
-#blogs h2 {
-    margin-bottom: 20px; /* Adjust this value for more or less spacing */
-    text-align: center; /* Optional: Center the heading */
+#blogs h2{
+font-size: 2.5rem;
+margin-bottom: 1.5rem;
+text-align: center; /* Center align the text */
+padding: 3rem 1rem; /* Add vertical padding and small horizontal padding */
+color: var(--text-dark); /* Dark text color */
+
+
 }
+
+
 .blogs {
     background-color: var(--color-beige);
     padding: 4rem 3rem;
@@ -449,12 +456,16 @@ color: var(--text-dark); /* Dark text color */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-#resume h2 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #ffffff; /* White text for high contrast */
+#resume h2{
+font-size: 2.5rem;
+margin-bottom: 1.5rem;
+text-align: center; /* Center align the text */
+padding: 3rem 1rem; /* Add vertical padding and small horizontal padding */
+color: var(--text-dark); /* Dark text color */
+
+
 }
+
 
 #resume button {
   background-color: var(--color-beige); /* Bright teal button */
@@ -477,6 +488,16 @@ color: var(--text-dark); /* Dark text color */
 }
 
 /* Contact Section */
+
+#contact h2{
+font-size: 2.5rem;
+margin-bottom: 1.5rem;
+text-align: center; /* Center align the text */
+padding: 3rem 1rem; /* Add vertical padding and small horizontal padding */
+color: var(--text-dark); /* Dark text color */
+
+
+}
 .contact {
     text-align: center;
     padding: 2rem;
