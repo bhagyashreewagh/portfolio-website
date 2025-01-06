@@ -268,19 +268,19 @@ body {
 .slide-track {
     display: flex;
     animation: scroll 15s linear infinite; /* Smooth horizontal scroll */
-    width: calc(200px * 22); /* Adjust for the total number of images */
+    width: calc(250px * 22); /* Adjust for the total number of images */
     gap: 2rem; /* Space between images */
 }
 
 /* Individual Slides */
 .slide {
     flex: 0 0 auto; /* Prevent shrinking */
-    width: 200px; /* Consistent width for slides */
+    width: 250px; /* Increased width for larger slides */
 }
 
 .slide img {
     width: 100%; /* Fill container */
-    height: 80px; /* Smaller height for uniformity */
+    height: 120px; /* Increased height for larger images */
     object-fit: contain; /* Ensure images retain proportions */
     transition: transform 0.3s ease; /* Smooth hover effect */
 }
@@ -299,6 +299,7 @@ body {
         transform: translateX(-50%); /* Move left by half the width */
     }
 }
+
 
 
 
